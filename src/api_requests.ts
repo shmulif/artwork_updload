@@ -5,7 +5,7 @@ import { JsonObject, Artwork, AnimalEvent } from './interfaces.js'
 // const id = urlParams.get('id')
 
 
-const domain: string = 'http://localhost:3000'
+const domain: string = 'https://artworkbackend-production.up.railway.app'
 
 async function fetchJsonSimple(url: string): Promise<[number, any]> {
      // call out to API for  data

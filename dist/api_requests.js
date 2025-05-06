@@ -1,7 +1,7 @@
 // // Get URL parameters
 // const urlParams = new URLSearchParams(window.location.search)
 // const id = urlParams.get('id')
-const domain = 'http://localhost:3000';
+const domain = 'https://artworkbackend-production.up.railway.app';
 async function fetchJsonSimple(url) {
     // call out to API for  data
     const response = await fetch(url);
