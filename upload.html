@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title id="title">Upload</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/upload.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#title"><img class="nav-logo" src="images/header.jpeg" alt="national geographic logo"></a>
+        </div>
+        <div class="flex flex-justify-center">
+            
+            <div class="main-container">
+
+                <div>
+                    <h2>Upload Artwork</h2>
+                    <form id="form" class="form" onsubmit="submitUploadArtworkForm(event)">
+
+                        <label for="name">Title:</label>
+                        <input id="name" type="text">
+
+                        <label for="images">Image:</label>
+                        <input type="file" id="fileInput" accept="image/*" />
+
+                        <label for="description">Blurb:</label>
+                        <textarea id="description" class="text-area" cols="40" rows="5"></textarea>
+                        
+                        <div id="error-message"></div>
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="links-container">
+                <h4>Legal</h4>
+                <a href="https://disneytermsofuse.com/english/">Terms of Use</a>
+                <a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/">Privacy Policy</a>
+            </div>
+            <div class="links-container">
+                <h4>Join Us</h4>
+                <a href="https://www.nationalgeographic.com/subscribe/magazines?cmpid=int_org=ngp::int_mc=website::int_src=ngp::int_cmp=subs_ngm::int_add=navsubscribe_us">Subscribe</a>
+                <a href="https://help.nationalgeographic.com/">Customer Service</a>
+                <a href="https://www.nationalgeographic.com/pages/topic/careers">Work at Nat Geo</a>
+            </div>
+            <div class="links-container">
+                <h4>Follow Us</h4>
+                <a href="https://www.instagram.com/natgeo/">Instagram</a>
+                <a href="https://www.facebook.com/natgeo">Facebook</a>
+                <a href="https://www.youtube.com/@NatGeo">Youtube</a>
+            </div>
+        </div>
+        <script type="module" src="dist/upload.js"> </script>
+    </body>
+</html>
+
